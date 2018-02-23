@@ -1,0 +1,259 @@
+body{
+  padding: 0;
+  margin: 0;
+
+
+}
+
+/* Global */
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+}
+
+/* header */
+header{
+  background: #35424a;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid;
+
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+
+
+header li{
+  float:left;
+  display: inline;
+  padding: 0 20px 0 20px;
+  font-family: 'Courgette', cursive;
+}
+
+header #branding{
+  float: left;
+}
+
+
+
+header nav{
+  float: right;
+  margin-top: 10px;
+}
+
+header .current a {
+  color: #e8491d;
+  font-weight: bold;
+}
+
+header a:hover{
+  color: #cccccc;
+  font-weight: bold;
+}
+
+/* Showcase */
+
+#showcase{
+  min-height: 500px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 6, 6, 0.45)
+    ), url('./img/backimg.jpg') no-repeat -100px -280px;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+}
+
+#showcase p{
+  font-size: 40px;
+  font-family: 'Vidaloka', serif;
+}
+
+
+/* header end*/
+
+#typed{
+  color:#ffffff;
+  position: absolute;
+  font-size: 50px;
+  max-width: 100%;
+  height: auto;
+  font-family: 'Sedgwick Ave Display', cursive;
+}
+
+
+/*Boxes*/
+
+#boxes{
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.45),
+      rgba(255, 255, 255, 0.45)
+    ),url(img/wall.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#boxes .box{
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+  line-height: 5px;
+
+}
+#boxes .box a{
+    text-decoration: none;
+    color: #0D47A1;
+}
+#boxes .box a:hover{
+  color: #0277BD;
+}
+
+#boxes .box img{
+  width: 130px;
+}
+
+#boxes .box h2{
+font-family: 'UnifrakturMaguntia', cursive;
+font-size: 38px;
+}
+
+#boxes .box p{
+  font-family: 'Delius Swash Caps', cursive;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: normal;
+  font-style: italic;
+}
+
+@media(max-width: 786px){
+  header #branding,
+  header nav,
+  header nav li,
+  #boxes .box{
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+
+
+
+/*BLog section*/
+
+
+
+
+
+
+
+
+
+footer nav{
+  float: right;
+}
+
+
+.footer1{
+  padding: 46px;
+  margin-top: 10px;
+  color: #ffffff;
+  background-color: #002333;
+  font-family: 'Courgette', cursive;
+}
+
+
+.footer1 ul{
+  display: flex;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.footer1 ul li{
+  list-style: none;
+
+}
+
+
+/*change dimensions from here*/
+
+.footer1 ul li a{
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 28px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+
+
+.footer1 ul li a .fa{
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+
+.footer1 ul li a:hover .fa{
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.footer1 ul li a:before{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .5s;
+}
+
+.footer1 ul li a:hover:before{
+  top: 0;
+}
+
+/* giving colors to all the footer logo's*/
+.footer1 ul li:nth-child(1) a:before{
+  background: #3b5999;
+}
+
+.footer1 ul li:nth-child(2) a:before{
+  background: #55acee;
+}
+
+.footer1 ul li:nth-child(3) a:before{
+  background: #dd4b39;
+}
+
+.footer1 ul li:nth-child(4) a:before{
+  background: #e4405f;
+}
